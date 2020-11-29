@@ -1,3 +1,5 @@
+import operator 
+
 def grp_by(seq, key):
   key_fn = operator.itemgetter(*key)
   lst = sorted(seq, key = key_fn)
